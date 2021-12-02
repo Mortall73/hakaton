@@ -7,288 +7,124 @@
   <title>Document</title>
 <script defer src="main.bundle.js"></script><link href="main.css" rel="stylesheet"></head>
 <body>
-  <div style="display: none;overflow: hidden;">
+  <div style="display: none;">
     <symbol>
-      <svg id="arrow-right" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
-        <path d="M.92 1.747 6.173 7 .92 12.253l1.413 1.414L9 7 2.333.333.92 1.747Z" />
+      <svg id="notify" width="24" height="34" viewBox="0 0 24 34" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 25.4756H23.9991C23.9991 26.9224 22.9349 27.0175 21.6227 27.0175H2.37605C1.06327 27.0175 0 26.9222 0 25.4754L0 25.2262C0 24.1857 0.554581 23.2947 1.35139 22.8721L2.10577 15.6977C2.10577 10.4454 5.47697 6.06158 9.96498 5.02733V2.24206C9.96498 1.00394 10.8762 0 12.0005 0C13.1242 0 14.0354 1.00394 14.0354 2.24206V5.02754C18.5234 6.06158 21.8946 10.445 21.8946 15.6979L22.649 22.8733C23.4458 23.2966 24 24.1859 24 25.2264V25.4756Z" />
+        <path d="M11.9995 33.3119C10.0387 33.3119 8.44822 31.5611 8.44822 29.3991H15.5503C15.5507 31.5611 13.9603 33.3119 11.9995 33.3119Z" />
+      </svg>
+      <svg id="dialog" width="31" height="30" viewBox="0 0 31 30"  xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9926 0C19.0013 -6.60433e-06 22.7637 1.56024 25.6007 4.39533C28.4378 7.23042 30.0068 10.9915 30.0093 15C30.0117 19.0084 28.4537 22.7695 25.6201 25.6046C22.7294 28.4968 18.8865 30 15.0046 30C12.5879 30 10.1518 29.4165 7.92469 28.2178C5.92752 29.6575 3.97407 29.9683 2.64838 29.9683C2.15363 29.9683 1.74765 29.9239 1.46219 29.8795C0.853202 29.7844 0.383528 29.3087 0.288011 28.6998C0.192493 28.0909 0.50294 27.5011 1.05461 27.2283C2.20235 26.6639 2.97551 25.5349 3.45698 24.5645C-1.46246 18.647 -1.08725 9.87529 4.38975 4.39537C7.22334 1.56027 10.9838 6.60441e-06 14.9926 0ZM16.0503 15.0054C16.0507 15.5868 15.5795 16.0582 14.9979 16.0582C14.4162 16.0582 13.9445 15.5868 13.9441 15.0054C13.9437 14.4239 14.4149 13.9526 14.9966 13.9526C15.5782 13.9526 16.05 14.4239 16.0503 15.0054ZM20.4275 16.0565C21.0091 16.0565 21.4802 15.5851 21.4799 15.0037C21.4795 14.4222 21.0078 13.9508 20.4262 13.9508C19.8446 13.9508 19.3734 14.4222 19.3738 15.0037C19.3741 15.5851 19.8459 16.0565 20.4275 16.0565ZM10.6206 15.0071C10.621 15.5885 10.1498 16.0599 9.56816 16.0599C8.98655 16.0599 8.51477 15.5885 8.51441 15.0071C8.51406 14.4257 8.98526 13.9543 9.56688 13.9543C10.1485 13.9543 10.6203 14.4256 10.6206 15.0071Z" />
       </svg>
     </symbol>
   </div>
   <div class="overflow-container">
     <main>
-      <nav class="nav" data-module="navBar">
-        <a href="/" class="nav__link nav__link--home">
-          <img src="images/Logo.png" alt="logo">
-        </a>
-
-        <a href="/"  class="nav__link nav__link--active">
-          <span class="nav__link-icon">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5ZM12 3 2 12h3v8h6v-6h2v6h6v-8h3L12 3Z" />
-            </svg>
-          </span>
-          <span class="nav__link-text">
-            Главный экран
-          </span>
-        </a>
-
-        <a href="/"  class="nav__link">
-          <span class="nav__link-icon">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M19 5v14H5V5h14Zm1.1-2H3.9c-.5 0-.9.4-.9.9v16.2c0 .4.4.9.9.9h16.2c.4 0 .9-.5.9-.9V3.9c0-.5-.5-.9-.9-.9ZM11 7h6v2h-6V7Zm0 4h6v2h-6v-2Zm0 4h6v2h-6v-2ZM7 7h2v2H7V7Zm0 4h2v2H7v-2Zm0 4h2v2H7v-2Z" />
-            </svg>
-          </span>
-          <span class="nav__link-text">
-            Задачи
-          </span>
-          <span class="nav__link-badge">
-            <span>
-              3
-            </span>
-          </span>
-        </a>
-
-        <a href="/"  class="nav__link">
-          <span class="nav__link-icon">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.5 13c-1.2 0-3.07.34-4.5 1-1.43-.67-3.3-1-4.5-1C5.33 13 1 14.08 1 16.25V19h22v-2.75c0-2.17-4.33-3.25-6.5-3.25Zm-4 4.5h-10v-1.25c0-.54 2.56-1.75 5-1.75s5 1.21 5 1.75v1.25Zm9 0H14v-1.25c0-.46-.2-.86-.52-1.22.88-.3 1.96-.53 3.02-.53 2.44 0 5 1.21 5 1.75v1.25ZM7.5 12c1.93 0 3.5-1.57 3.5-3.5S9.43 5 7.5 5 4 6.57 4 8.5 5.57 12 7.5 12Zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2Zm9 5.5c1.93 0 3.5-1.57 3.5-3.5S18.43 5 16.5 5 13 6.57 13 8.5s1.57 3.5 3.5 3.5Zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2Z" />
-            </svg>
-          </span>
-          <span class="nav__link-text">
-            Команда
-          </span>
-        </a>
-
-        <a href="/"  class="nav__link">
-          <span class="nav__link-icon">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Zm0 18H4V10h16v11Zm0-13H4V5h16v3Z" />
-            </svg>
-          </span>
-          <span class="nav__link-text">
-            Календарь
-          </span>
-        </a>
-
-        <a href="/"  class="nav__link">
-          <span class="nav__link-icon">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62Z" />
-              <path d="M9 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
-              <path d="M18 11.03A6.04 6.04 0 0 0 12.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 0 0 4.86-5.89c1.31 2.63 4 4.44 7.12 4.47Z" />
-            </svg>
-          </span>
-          <span class="nav__link-text">
-            Справочник
-          </span>
-        </a>
-
-        <a href="/"  class="nav__link">
-          <span class="nav__link-icon">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4Z"/>
-            </svg>
-          </span>
-          <span class="nav__link-text">
-            Бонусы
-          </span>
-        </a>
-      </nav>
-      <section class="content">
-        <h1>Главный экран</h1>
-        <div class="panel mb-20">
-          <div class="panel__header mb-24">
-            <p class="h3 panel__header-title">Прогресс онбординга</p>
-            <a href="/" class="panel__header-link">
-              Подробнее
-              <span class="panel__header-link-icon">
-                <svg width="9" height="14" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#arrow-right" />
+      <header class="header">
+        <div class="header__inner">
+          <a href="#" class="header__logo">
+            <img src="images/logo.png" alt="">
+          </a>
+          <nav class="header__nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--active">
+                  О банке
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Коллеги
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  базы знаний
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  сообщества
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  задачи
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__settings">
+            <a href="#" class="header__setting header__user"></a>
+            <span class="header__setting header__notification">
+              <span>
+                <svg width="24" height="34" viewBox="0 0 24 34" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#notify" />
                 </svg>
               </span>
-            </a>
+            </span>
+            <span class="header__setting header__dialog">
+              <span>
+                <svg width="31" height="30" viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#dialog" />
+                </svg>
+              </span>
+            </span>
           </div>
-          <div data-module="horizontalScroll" class="horizontal-scroll" data-gap="10">
-            <div class="horizontal-scroll__container">
-              <a href="/" class="progress-panel progress-panel--first progress-panel--used">
-                <span class="progress-panel__title">Знакомство</span>
-                <span class="progress-panel__text">Экскурсия по офису</span>
+        </div>
+        <button class="header__search"></button>
+      </header>
+
+      <div class="container">
+        <div class="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Абдрашитов Альберт Мазитович</a>
+            </li>
+            <li>
+              <a href="#" class="current">Рабочий стол</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <div class="user-card">
+            <div class="user-card__img">
+              <img src="images/user.png" alt="">
+              <span class="user-card__status"></span>
+            </div>
+            <div class="user-card__body">
+              <p class="user-card__title">
+                Абдрашитов Альберт Мазитович
+              </p>
+              <p class="user-card__position">
+                Главный специалист по работе с ключевыми клиентами
+              </p>
+              <a href="#" class="user-card__segment">
+                Группа внутренних коммуникаций и развития корпоративной культуры / Департамент управления персоналом / Подразделения под  Барыбина О.Г.
               </a>
-              <a href="/" class="progress-panel progress-panel--first progress-panel--used">
-                <span class="progress-panel__title">Знакомство</span>
-                <span class="progress-panel__text">Экскурсия по офису</span>
-              </a>
-              <a href="/" class="progress-panel progress-panel--first progress-panel--used">
-                <span class="progress-panel__title">Знакомство</span>
-                <span class="progress-panel__text">Экскурсия по офису</span>
-              </a>
-              <a href="/" class="progress-panel progress-panel--first progress-panel--used">
-                <span class="progress-panel__title">Знакомство</span>
-                <span class="progress-panel__text">Экскурсия по офису</span>
-              </a>
-              <a href="/" class="progress-panel progress-panel--first progress-panel--used">
-                <span class="progress-panel__title">Знакомство</span>
-                <span class="progress-panel__text">Экскурсия по офису</span>
-              </a>
-              <a href="/" class="progress-panel progress-panel--first progress-panel--used">
-                <span class="progress-panel__title">Знакомство</span>
-                <span class="progress-panel__text">Экскурсия по офису</span>
-              </a>
-              <a href="/" class="progress-panel progress-panel--first progress-panel--used">
-                <span class="progress-panel__title">Знакомство</span>
-                <span class="progress-panel__text">Экскурсия по офису</span>
-              </a>
-              <a href="/" class="progress-panel progress-panel--first progress-panel--used">
-                <span class="progress-panel__title">Знакомство</span>
-                <span class="progress-panel__text">Экскурсия по офису</span>
-              </a>
-              <a href="/" class="progress-panel progress-panel--first progress-panel--used">
-                <span class="progress-panel__title">Знакомство</span>
-                <span class="progress-panel__text">Экскурсия по офису</span>
-              </a>
-              <a href="/" class="progress-panel progress-panel--first progress-panel--used">
-                <span class="progress-panel__title">Знакомство</span>
-                <span class="progress-panel__text">Экскурсия по офису</span>
-              </a>
+            </div>
+            <div class="user-card__about">
+              <p class="user-card__work-number">
+                <span>(71) 3729</span>
+                <span>(3812) 43-8484</span>
+              </p>
+              <p class="user-card__phone">
+                +7 (903) 676-8494
+              </p>
+              <p class="user-card__mail">
+                abdrashitovam@orenburg.psbank.ru
+              </p>
+              <p class="user-card__loccation">
+                Москва, Дербеневская Набережная, д. 7, стр./корпус 22, подъезд А, 2 этаж, Open Space 1240, место 127
+              </p>
             </div>
           </div>
         </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col col-6 col-sm-6 col-md-3">
-              <div class="panel">
-                <div class="user-card">
-                  <div class="user-card__img">
-                    <img src="images/avatar.png" alt="avatar">
-                  </div>
-                  <p class="user-card__title">Томас Андерсон</p>
-                  <p class="user-card__description">
-                    Senior Frontend Developer
-                  </p>
-                  <p class="user-card__subtext">
-                    26 лет |  Москва
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-6 col-sm-6 col-md-3">
-              <div class="panel mb-20">
-                <div class="panel__header mb-20">
-                  <p class="h3 panel__header-title">Ваша команда</p>
-                </div>
-                <div class="team-users">
-                  <div class="user-card user-card--inline">
-                    <div class="user-card__img">
-                      <img src="images/avatar.png" alt="avatar">
-                    </div>
-                    <div class="user-card__body">
-                      <p class="user-card__title">Тим-лид</p>
-                      <p class="user-card__description">
-                        Тринити Кожаная
-                      </p>
-                    </div>
-                    
-                    <a href="#" class="user-card__message"></a>
-                  </div>
-
-                  <div class="user-card user-card--inline">
-                    <div class="user-card__img">
-                      <img src="images/avatar.png" alt="avatar">
-                    </div>
-                    <div class="user-card__body">
-                      <p class="user-card__title">Тим-лид</p>
-                      <p class="user-card__description">
-                        Тринити Кожаная
-                      </p>
-                    </div>
-                    
-                    <a href="#" class="user-card__message"></a>
-                  </div>
-
-                  <div class="user-card user-card--inline">
-                    <div class="user-card__img">
-                      <img src="images/avatar.png" alt="avatar">
-                    </div>
-                    <div class="user-card__body">
-                      <p class="user-card__title">Тим-лид</p>
-                      <p class="user-card__description">
-                        Тринити Кожаная
-                      </p>
-                    </div>
-                    
-                    <a href="#" class="user-card__message"></a>
-                  </div>
-                  <div class="team-users__footer">
-                    <a href="#" class="link-arrow-right">
-                      Показать всех
-                      <span class="link-arrow-right__icon">
-                        <svg width="9" height="14" xmlns="http://www.w3.org/2000/svg">
-                          <use xlink:href="#arrow-right" />
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel">
-                <div class="panel__header mb-20">
-                  <p class="h3 panel__header-title">Отпуск</p>
-                </div>
-                <p class="panel__description">
-                  Успешно пройдя испытательный срок вам станет доступно планирование отпуска
-                </p>
-              </div>
-            </div>
-
-            <div class="col col-6 col-sm-6 col-md-3">
-              <div class="panel">
-                <div class="panel__header">
-                  <p class="h3 panel__header-title">События</p>
-                  <a href="/" class="panel__header-link">
-                    Все
-                    <span class="panel__header-link-icon">
-                      <svg width="9" height="14" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="#arrow-right" />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <p class="panel__header-subtitle">
-                  2 ноября
-                </p>
-                <div class="events">
-                  <a class="event-card" href="#">
-                    <span class="event-card__title">Дейли</span>
-                    <span class="event-card__time">9:00 — 10:00</span>
-                  </a>
-                  <a class="event-card event-card--red" href="#">
-                    <span class="event-card__title">Дейли</span>
-                    <span class="event-card__time">9:00 — 10:00</span>
-                  </a>
-                  <a class="event-card event-card--yellow" href="#">
-                    <span class="event-card__title">Дейли</span>
-                    <span class="event-card__time">9:00 — 10:00</span>
-                  </a>
-                  <a class="event-card event-card--green" href="#">
-                    <span class="event-card__title">Дейли</span>
-                    <span class="event-card__time">9:00 — 10:00</span>
-                  </a>
-                  <a class="event-card" href="#">
-                    <span class="event-card__title">Дейли</span>
-                    <span class="event-card__time">9:00 — 10:00</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col col-6 col-sm-6 col-md-3">
-              2
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
   </div>
 </body>

@@ -150,36 +150,36 @@ module.exports = (env, args) => {
         inject: true,
         cache: false,
       }),
-      new HtmlWebpackPlugin({
-        filename: 'calendar.html',
-        template: 'src/pages/calendar.html',
-        inject: true,
-        cache: false,
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'team.html',
-        template: 'src/pages/team.html',
-        inject: true,
-        cache: false,
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'tasks.html',
-        template: 'src/pages/tasks.html',
-        inject: true,
-        cache: false,
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'handbook.html',
-        template: 'src/pages/handbook.html',
-        inject: true,
-        cache: false,
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'aboutCompany.html',
-        template: 'src/pages/aboutCompany.html',
-        inject: true,
-        cache: false,
-      }),
+      // new HtmlWebpackPlugin({
+      //   filename: 'calendar.html',
+      //   template: 'src/pages/calendar.html',
+      //   inject: true,
+      //   cache: false,
+      // }),
+      // new HtmlWebpackPlugin({
+      //   filename: 'team.html',
+      //   template: 'src/pages/team.html',
+      //   inject: true,
+      //   cache: false,
+      // }),
+      // new HtmlWebpackPlugin({
+      //   filename: 'tasks.html',
+      //   template: 'src/pages/tasks.html',
+      //   inject: true,
+      //   cache: false,
+      // }),
+      // new HtmlWebpackPlugin({
+      //   filename: 'handbook.html',
+      //   template: 'src/pages/handbook.html',
+      //   inject: true,
+      //   cache: false,
+      // }),
+      // new HtmlWebpackPlugin({
+      //   filename: 'aboutCompany.html',
+      //   template: 'src/pages/aboutCompany.html',
+      //   inject: true,
+      //   cache: false,
+      // }),
       new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // all options are optional

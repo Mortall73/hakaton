@@ -1,0 +1,36 @@
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  .menu__item {
+    margin: 0 40px 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .menu__link {
+    color: $gray;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 35px 0;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $colorBlack;
+    }
+
+    &.menu__link--active {
+      border-bottom-color: #FA4616;
+      color: $colorBlack;
+    }
+  }
+}
