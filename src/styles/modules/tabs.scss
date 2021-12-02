@@ -1,0 +1,18 @@
+.tabs {
+  .uk-tab {
+    &::before {
+      border-bottom-color: rgba(0, 0, 0, 0.12);
+    }
+    a {
+      border-bottom: 2px solid transparent;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 12px;
+      text-transform: none;
+    }
+    .uk-active > a {
+      border-bottom-color: #694ED6;
+      color: #694ED6;
+    }
+  }
+}

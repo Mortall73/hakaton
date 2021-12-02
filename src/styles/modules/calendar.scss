@@ -1,0 +1,16 @@
+.calendar {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  .fc-daygrid-day-number,
+  .fc-col-header-cell-cushion  {
+    color: $baseDarkColor;
+  }
+
+  .fc-header-toolbar {
+    .fc-toolbar-chunk {
+      display: flex;
+    }
+  }
+}

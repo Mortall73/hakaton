@@ -1,0 +1,60 @@
+.user-modal {
+  text-align: center;
+
+  .user-modal__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 39px;
+    color: #000;
+    margin: 0 0 16px 0;
+  }
+
+  .user-modal__img {
+    width: 116px;
+    height: 116px;
+    margin: 0 auto 24px auto;
+    border-radius: 50%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      min-height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .user-modal__position {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin: 0 0 16px 0;
+  }
+
+  .user-modal__description {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    color: rgba(0, 0, 0, 0.54);
+    margin: 0 0 16px 0;
+  }
+
+  .user-modal__info {
+    .user-modal__mail,
+    .user-modal__number {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+      color: $baseDarkColor;
+    }
+  }
+
+  .user-modal__btn {
+    margin-top: 24px;
+  }
+}
