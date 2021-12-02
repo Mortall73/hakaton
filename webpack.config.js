@@ -36,10 +36,13 @@ module.exports = (env, args) => {
       port: 8000,
       historyApiFallback: true,
       hot: false,
-      watchFiles: ['src/**/*.html'],
+      watchFiles: ['src/**/*'],
       liveReload: true,
     },
     devtool: 'source-map',
+    optimization: {
+      minimize: false
+    },
     module: {
       rules: [
           {
@@ -71,12 +74,30 @@ module.exports = (env, args) => {
         {
           test: /\.scss/i,
           use: [
-            devMode ? "style-loader" : {
+            // devMode ? "style-loader" : {
+            //   loader: MiniCssExtractPlugin.loader,
+            //   options: {
+            //     // you can specify a publicPath here
+            //     // by default it uses publicPath in webpackOptions.output
+            //     //publicPath: '/resources'
+            //   },
+            // },
+            // {
+            //   loader: MiniCssExtractPlugin.loader,
+            //   options: {
+            //     // you can specify a publicPath here
+            //     // by default it uses publicPath in webpackOptions.output
+            //     //publicPath: '/',
+            //     //hmr: process.env.NODE_ENV === 'development',
+            //   },
+            // },
+            {
               loader: MiniCssExtractPlugin.loader,
               options: {
                 // you can specify a publicPath here
                 // by default it uses publicPath in webpackOptions.output
-                //publicPath: '/resources'
+                //publicPath: '/',
+                //hmr: process.env.NODE_ENV === 'development',
               },
             },
             "css-loader",
@@ -94,7 +115,7 @@ module.exports = (env, args) => {
           ]
         },
         {
-          test: /\.(?:ico|gif|png|jpg|jpeg)$/i, 
+          test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i, 
           //loader: 'url-loader',
           type: 'asset/resource',
           generator: {
