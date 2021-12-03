@@ -475,13 +475,6 @@ main {
 
 .uk-modal {
   background: rgba(0, 0, 0, 0.29); }
-  .uk-modal .uk-modal-dialog {
-    background: #FAFAFA;
-    border-radius: 16px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 608px;
-    padding: 40px; }
   .uk-modal .uk-close {
     top: 0px;
     right: -56px;
@@ -489,7 +482,7 @@ main {
     background: #fff;
     border-radius: 8px; }
     .uk-modal .uk-close svg line {
-      stroke: #000 !important; }
+      stroke: #FA4616 !important; }
 
 .container {
   width: 100%;
@@ -523,17 +516,59 @@ img {
 .uk-modal.uk-open {
   background: rgba(0, 0, 0, 0.29); }
 
-.modal .modal__content {
+.uk-modal .modal__content {
   margin-top: auto;
   margin-bottom: auto;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  padding: 40px;
+  padding: 40px 40px 60px 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 1200px; }
+  max-width: 1200px !important;
+  width: 100%; }
+  .uk-modal .modal__content.modal__content--image {
+    position: relative; }
+    .uk-modal .modal__content.modal__content--image::after {
+      content: '';
+      position: absolute;
+      right: 60px;
+      bottom: 80px;
+      width: 310px;
+      height: 400px;
+      background: url(images/rabbit-modal.png) center center no-repeat;
+      background-size: contain; }
+    .uk-modal .modal__content.modal__content--image .modal__body {
+      max-width: 750px; }
+
+.uk-modal .modal__title {
+  font-family: 'PTSerif';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 55px;
+  margin: 0 0 24px 0; }
+
+.uk-modal .uk-close {
+  border: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  right: -80px;
+  cursor: pointer; }
+
+.uk-modal .modal__body {
+  font-size: 20px;
+  line-height: 29px; }
+  .uk-modal .modal__body p {
+    margin: 0 0 16px 0; }
+
+.uk-modal .modal__buttons {
+  margin-top: 42px; }
 
 .analytics-page .analytics-page__header {
   display: -webkit-box;
@@ -554,6 +589,9 @@ img {
         flex-shrink: 0; }
     .analytics-page .analytics-page__header .analytics-page__header-buttons .btn {
       margin-left: 16px; }
+
+.map {
+  cursor: pointer; }
 
 .header {
   background: #FFFFFF;
