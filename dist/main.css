@@ -830,7 +830,8 @@ img {
     .menu.menu--top .menu__link {
       border-bottom: none;
       padding: 24px 0;
-      position: relative; }
+      position: relative;
+      font-size: 15px; }
       .menu.menu--top .menu__link::after {
         content: '';
         position: absolute;
