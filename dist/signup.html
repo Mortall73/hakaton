@@ -87,135 +87,32 @@
         <button class="header__search"></button>
       </header>
 
-      <div class="container analytics-page">
-        <ul class="menu menu--bottom">
-          <li class="menu__item">
-            <a href="#" class="menu__link">
-              адаптация
-            </a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link menu__link--active">
-              аналитика
-            </a>
-          </li>
-        </ul>
-
-        <div class="breadcrumbs">
-          <ul>
-            <li>
-              <a href="#">Главная</a>
-            </li>
-            <li>
-              <a href="#">Абдрашитов Альберт Мазитович</a>
-            </li>
-            <li>
-              <a href="#">Адаптация</a>
-            </li>
-            <li>
-              <a href="#" class="current">Аналитика</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="analytics-page__header">
-          <h2>Аналитика</h2>
-
-          <div class="input-wrap input--search">
-            <input type="text" name="search" placeholder="Поиск по сотруднику">
-            <span class="input-wrap__search-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#search" />
-              </svg>
-            </span>
+      <div class="container signup-page">
+        <div class="form-container form-container--signup">
+          <div class="panel">
+            <div class="panel__inner">
+              <p class="panel__title">
+                Авторизация
+              </p>
+              <form action="" class="form">
+                <div class="input-wrap">
+                  <input type="text" name="login" placeholder="Логин">
+                </div>
+                <div class="input-wrap">
+                  <input type="password" name="password" placeholder="Пароль">
+                </div>
+                <div class="form__btns form__btns--center">
+                  <button class="btn btn--primary" type="submit">Войти</button>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="analytics-page__header-buttons">
-            <button class="btn btn--secondary">
-              <span class="btn__icon">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#plus-icon" />
-                </svg>
-              </span>
-              <span class="btn__text">
-                добавить задачу
-              </span>
-            </button>
-            <button class="btn btn--secondary">
-              <span class="btn__icon">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="#plus-icon" />
-                </svg>
-              </span>
-              <span class="btn__text">
-                назначить наставника
-              </span>
-            </button>
-          </div>
+          <span class="symbol-icon">
+            <img src="images/rabbit1.svg" alt="">
+          </span>
         </div>
-
-        <div class="panel">
-          <table class="table">
-            <thead>
-              <tr>
-                <td>
-                  <span class="table__sort">
-                    Обучаемый
-                  </span>
-                </td>
-                <td>
-                  <span class="table__sort table__sort--reverse">
-                    Период
-                  </span>
-                </td>
-                <td>
-                  <span class="table__sort table__sort--reverse">
-                    Прогресс
-                  </span>
-                </td>
-                <td>
-                  <span class="table__sort">
-                    Наставник
-                  </span>
-                </td>
-                <td></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="no-hover">
-                <td>
-                  <span class="table__user">
-                    <span class="table__user-img">
-                      <img src="images/user.png" alt="">
-                    </span>
-                    <span>Варламова Елена Сергеевна</span>
-                  </span>
-                </td>
-                <td>
-                  <span>1 м 18 д</span>
-                </td>
-                <td>
-                  78%
-                </td>
-                <td>
-                  <span class="table__user">
-                    <span class="table__user-img">
-                      <img src="images/user.png" alt="">
-                    </span>
-                    <span>Пантелеймонов Пантелейемон Иванович</span>
-                  </span>
-                </td>
-                <td>
-                  <button class="btn btn--link">
-                    Сменить
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
       </div>
-      
+
       <footer class="footer">
         <div class="container">
           <div class="footer__left">

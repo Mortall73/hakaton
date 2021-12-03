@@ -19,6 +19,10 @@
   }
 }
 
+a.btn {
+  display: inline-block;
+}
+
 .btn {
   padding: 0;
   background: none;
@@ -27,6 +31,7 @@
   border-radius: 40px;
   padding: 14px 20px;
   cursor: pointer;
+  text-decoration: none;
 
   .btn__icon {
     display: inline-block;
@@ -69,5 +74,21 @@
     font-size: 14px;
     line-height: 18px;
     color: #009FDA;
+  }
+  
+  &.btn--primary {
+    background: #FA4616;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    color: #fff;
+
+    &:hover {
+      background: #F03200;
+    }
   }
 }

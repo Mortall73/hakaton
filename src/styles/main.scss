@@ -80,6 +80,7 @@ h2, .h2 {
 }
 
 @import "./pages/analytics.scss";
+@import "./pages/signup.scss";
 
 @import "./modules/header.scss";
 @import "./modules/breadcrumbs.scss";
@@ -92,3 +93,5 @@ h2, .h2 {
 @import './modules/badge.scss';
 @import "./modules/buttons.scss";
 @import "./modules/input.scss";
+@import "./modules/form.scss";
+@import "./modules/footer.scss";

@@ -1,0 +1,45 @@
+.form {
+  .input-wrap {
+    margin-bottom: 24px;
+  }
+
+  .form__btns {
+    &.form__btns {
+      text-align: center;
+    }
+  }
+}
+
+.form-container {
+  margin: 0 auto;
+
+  &.form-container--signup {
+    max-width: 800px;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+
+    .panel {
+      margin-bottom: 0;
+
+      .panel__inner {
+        padding: 46px;
+      }
+    }
+
+    .panel__title {
+      text-align: center;
+    }
+
+    .form {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .symbol-icon {
+      position: absolute;
+      top: 110px;
+      right: 0px;
+    }
+  }
+}

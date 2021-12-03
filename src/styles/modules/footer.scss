@@ -1,0 +1,43 @@
+.footer {
+  background: #FFFFFF;
+  border-top: 1px solid #E3E5E8;
+  box-sizing: border-box;
+  padding: 24px 0;
+  margin-top: 60px;
+
+  .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .footer__left {
+    max-width: 570px;
+  }
+
+  .footer__title {
+    font-size: 14px;
+    line-height: 18px;
+    color: #30353B;
+    opacity: 0.5;
+    margin: 0 0 16px 0;
+  }
+
+  .footer__sub {
+    font-size: 12px;
+    line-height: 16px;
+    color: #30353B;
+    opacity: 0.5;
+    margin: 0;
+  }
+
+  .footer__right {
+    .btn {
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
