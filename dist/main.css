@@ -500,6 +500,9 @@ h2, .h2 {
   font-family: 'PTSerif';
   line-height: 1; }
 
+ul.styled li {
+  margin-bottom: 8px; }
+
 img {
   width: auto;
   max-width: 100%; }
