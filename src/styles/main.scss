@@ -14,6 +14,8 @@ body {
   background-color: #F5F6F7;
   background: linear-gradient(0deg, #F2F2F2, #F2F2F2), #F5F6F7;
   margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
 
   &.stop-scrolling {
     overflow-y: hidden;
@@ -124,7 +126,7 @@ img {
           right: 55px;
           bottom: 40px;
         }
-        
+
         &::before {
           content: "";
           width: 76px;
