@@ -1,0 +1,51 @@
+.questions-page {
+  .questions-row {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .questions-page__img {
+    padding-top: 40px;
+    margin-left: 38px;
+  }
+
+  .questions-page__progress {
+    margin: 50px 0;
+    
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      li {
+        width: 60px;
+        height: 2px;
+        margin-right: 10px;
+        background: #E3E5E8;
+
+        &.success {
+          background: #008744;;
+        }
+
+        &.active {
+          background: #009FDA;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 1px;
+            width: 24px;
+            height: 24px;
+            background: url('/public/img/ears.png') center center no-repeat;
+            z-index: -1;
+            margin-left: -12px;
+          }
+        }
+      }
+    }
+  }
+}

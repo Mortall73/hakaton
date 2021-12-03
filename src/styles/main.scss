@@ -1,5 +1,5 @@
 @import "uikit/src/scss/variables-theme.scss";
-@import "uikit/src/scss/mixins-theme.scss";
+// @import "uikit/src/scss/mixins-theme.scss";
 @import "uikit/src/scss/components/modal.scss";
 // @import "uikit/src/scss/uikit-theme.scss";
 
@@ -169,6 +169,7 @@ img {
 @import "./pages/analytics.scss";
 @import "./pages/signup.scss";
 @import "./pages/map.scss";
+@import "./pages/questions.scss";
 
 @import "./modules/header.scss";
 @import "./modules/breadcrumbs.scss";
@@ -183,3 +184,4 @@ img {
 @import "./modules/input.scss";
 @import "./modules/form.scss";
 @import "./modules/footer.scss";
+@import "./modules/question.scss";

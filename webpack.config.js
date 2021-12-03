@@ -168,6 +168,12 @@ module.exports = (env, args) => {
         inject: true,
         cache: false,
       }),
+      new HtmlWebpackPlugin({
+        filename: 'questions.html',
+        template: 'src/pages/questions.html',
+        inject: true,
+        cache: false,
+      }),
       // new HtmlWebpackPlugin({
       //   filename: 'team.html',
       //   template: 'src/pages/team.html',
