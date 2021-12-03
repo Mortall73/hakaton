@@ -124,6 +124,18 @@ img {
           right: 55px;
           bottom: 40px;
         }
+        
+        &::before {
+          content: "";
+          width: 76px;
+          height: 76px;
+          position: absolute;
+          right: 85px;
+          top: 130px;
+          z-index: 1;
+          background: url('/public/img/pin.png') center center no-repeat;
+          background-size: contain;
+        }
       }
 
       .modal__body {

@@ -538,6 +538,16 @@ img {
       background-size: contain;
       right: 55px;
       bottom: 40px; }
+    .uk-modal .modal__content.modal__content--image.modal__content--office::before {
+      content: "";
+      width: 76px;
+      height: 76px;
+      position: absolute;
+      right: 85px;
+      top: 130px;
+      z-index: 1;
+      background: url(images/pin.png) center center no-repeat;
+      background-size: contain; }
     .uk-modal .modal__content.modal__content--image .modal__body {
       max-width: 750px; }
 
