@@ -162,6 +162,12 @@ module.exports = (env, args) => {
         inject: true,
         cache: false,
       }),
+      new HtmlWebpackPlugin({
+        filename: 'map.html',
+        template: 'src/pages/map.html',
+        inject: true,
+        cache: false,
+      }),
       // new HtmlWebpackPlugin({
       //   filename: 'team.html',
       //   template: 'src/pages/team.html',

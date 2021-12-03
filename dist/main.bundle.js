@@ -16088,6 +16088,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_horizontalScroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/horizontalScroll */ "./src/scripts/modules/horizontalScroll.js");
 /* harmony import */ var _modules_calendar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/calendar */ "./src/scripts/modules/calendar.js");
 /* harmony import */ var _modules_teamUser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/teamUser */ "./src/scripts/modules/teamUser.js");
+/* harmony import */ var _modules_mapModal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/mapModal */ "./src/scripts/modules/mapModal.js");
+
 
 
 
@@ -16116,10 +16118,11 @@ var Modules = /*#__PURE__*/ function() {
     function Modules() {
         _classCallCheck(this, Modules);
         this.modules = {
-            'navBar': _modules_navigation__WEBPACK_IMPORTED_MODULE_0__["default"],
-            'horizontalScroll': _modules_horizontalScroll__WEBPACK_IMPORTED_MODULE_1__["default"],
-            'calendar': _modules_calendar__WEBPACK_IMPORTED_MODULE_2__["default"],
-            'teamUser': _modules_teamUser__WEBPACK_IMPORTED_MODULE_3__["default"]
+            // 'navBar': navigation,
+            // 'horizontalScroll': horizontalScroll,
+            // 'calendar': calendar,
+            // 'teamUser': teamUser
+            'mapModal': _modules_mapModal__WEBPACK_IMPORTED_MODULE_4__["default"]
         };
     }
     _createClass(Modules, [
@@ -16267,6 +16270,31 @@ function _toConsumableArray(arr) {
             wrapper.style.transform = "translateX(-".concat(totalWidth - wrapper.clientWidth, "px)");
             delta = -(totalWidth - wrapper.clientWidth);
         }
+    });
+};
+
+
+/***/ }),
+
+/***/ "./src/scripts/modules/mapModal.js":
+/*!*****************************************!*\
+  !*** ./src/scripts/modules/mapModal.js ***!
+  \*****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
+/* harmony export */ });
+/* harmony import */ var uikit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! uikit */ "./node_modules/uikit/dist/js/uikit.js");
+/* harmony import */ var uikit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(uikit__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(root) {
+    var modalId = root.getAttribute('data-id');
+    var content = document.querySelector("[data-modal-id=\"".concat(modalId, "\"]")).innerHTML;
+    root.addEventListener('click', function() {
+        uikit__WEBPACK_IMPORTED_MODULE_0___default().modal(content).show();
     });
 };
 

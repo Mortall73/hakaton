@@ -2,14 +2,15 @@ import navigation from "./modules/navigation";
 import horizontalScroll from "./modules/horizontalScroll";
 import calendar from "./modules/calendar";
 import teamUser from "./modules/teamUser";
-
+import mapModal from './modules/mapModal';
 class Modules {
   constructor() {
     this.modules = {
-      'navBar': navigation,
-      'horizontalScroll': horizontalScroll,
-      'calendar': calendar,
-      'teamUser': teamUser
+      // 'navBar': navigation,
+      // 'horizontalScroll': horizontalScroll,
+      // 'calendar': calendar,
+      // 'teamUser': teamUser
+      'mapModal': mapModal
     }
   }
 
