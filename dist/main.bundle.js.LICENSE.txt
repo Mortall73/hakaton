@@ -1,0 +1,7 @@
+/*!
+FullCalendar v5.10.1
+Docs & License: https://fullcalendar.io/
+(c) 2021 Adam Shaw
+*/
+
+/*! UIkit 3.9.4 | https://www.getuikit.com | (c) 2014 - 2021 YOOtheme | MIT License */

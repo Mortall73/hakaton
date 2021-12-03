@@ -539,6 +539,13 @@ img {
       height: 400px;
       background: url(images/rabbit-modal.png) center center no-repeat;
       background-size: contain; }
+    .uk-modal .modal__content.modal__content--image.modal__content--office::after {
+      width: 582px;
+      height: 452px;
+      background: url(images/office.png) center center no-repeat;
+      background-size: contain;
+      right: 55px;
+      bottom: 40px; }
     .uk-modal .modal__content.modal__content--image .modal__body {
       max-width: 750px; }
 
