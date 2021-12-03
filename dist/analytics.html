@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<script defer src="main.bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+<body>
+  <div style="display: none;">
+    <symbol>
+      <svg id="notify" width="24" height="34" viewBox="0 0 24 34" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 25.4756H23.9991C23.9991 26.9224 22.9349 27.0175 21.6227 27.0175H2.37605C1.06327 27.0175 0 26.9222 0 25.4754L0 25.2262C0 24.1857 0.554581 23.2947 1.35139 22.8721L2.10577 15.6977C2.10577 10.4454 5.47697 6.06158 9.96498 5.02733V2.24206C9.96498 1.00394 10.8762 0 12.0005 0C13.1242 0 14.0354 1.00394 14.0354 2.24206V5.02754C18.5234 6.06158 21.8946 10.445 21.8946 15.6979L22.649 22.8733C23.4458 23.2966 24 24.1859 24 25.2264V25.4756Z" />
+        <path d="M11.9995 33.3119C10.0387 33.3119 8.44822 31.5611 8.44822 29.3991H15.5503C15.5507 31.5611 13.9603 33.3119 11.9995 33.3119Z" />
+      </svg>
+      <svg id="dialog" width="31" height="30" viewBox="0 0 31 30"  xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9926 0C19.0013 -6.60433e-06 22.7637 1.56024 25.6007 4.39533C28.4378 7.23042 30.0068 10.9915 30.0093 15C30.0117 19.0084 28.4537 22.7695 25.6201 25.6046C22.7294 28.4968 18.8865 30 15.0046 30C12.5879 30 10.1518 29.4165 7.92469 28.2178C5.92752 29.6575 3.97407 29.9683 2.64838 29.9683C2.15363 29.9683 1.74765 29.9239 1.46219 29.8795C0.853202 29.7844 0.383528 29.3087 0.288011 28.6998C0.192493 28.0909 0.50294 27.5011 1.05461 27.2283C2.20235 26.6639 2.97551 25.5349 3.45698 24.5645C-1.46246 18.647 -1.08725 9.87529 4.38975 4.39537C7.22334 1.56027 10.9838 6.60441e-06 14.9926 0ZM16.0503 15.0054C16.0507 15.5868 15.5795 16.0582 14.9979 16.0582C14.4162 16.0582 13.9445 15.5868 13.9441 15.0054C13.9437 14.4239 14.4149 13.9526 14.9966 13.9526C15.5782 13.9526 16.05 14.4239 16.0503 15.0054ZM20.4275 16.0565C21.0091 16.0565 21.4802 15.5851 21.4799 15.0037C21.4795 14.4222 21.0078 13.9508 20.4262 13.9508C19.8446 13.9508 19.3734 14.4222 19.3738 15.0037C19.3741 15.5851 19.8459 16.0565 20.4275 16.0565ZM10.6206 15.0071C10.621 15.5885 10.1498 16.0599 9.56816 16.0599C8.98655 16.0599 8.51477 15.5885 8.51441 15.0071C8.51406 14.4257 8.98526 13.9543 9.56688 13.9543C10.1485 13.9543 10.6203 14.4256 10.6206 15.0071Z" />
+      </svg>
+      <svg id="plus-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 7.99999C2 7.44771 2.44772 6.99999 3 6.99999H13C13.5523 6.99999 14 7.44771 14 7.99999C14 8.55228 13.5523 8.99999 13 8.99999H3C2.44772 8.99999 2 8.55228 2 7.99999Z" />
+        <path d="M7.99988 14C7.44759 14 6.99988 13.5523 6.99988 13V3C6.99988 2.44772 7.44759 2 7.99988 2C8.55216 2 8.99988 2.44772 8.99988 3V13C8.99988 13.5523 8.55216 14 7.99988 14Z" />
+      </svg>
+    </symbol>
+  </div>
+  <div class="overflow-container">
+    <main>
+      <header class="header">
+        <div class="header__inner">
+          <a href="#" class="header__logo">
+            <img src="images/logo.png" alt="">
+          </a>
+          <nav class="header__nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--active">
+                  О банке
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Коллеги
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  базы знаний
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  сообщества
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  задачи
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__settings">
+            <a href="#" class="header__setting header__user"></a>
+            <span class="header__setting header__notification">
+              <span>
+                <svg width="24" height="34" viewBox="0 0 24 34" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#notify" />
+                </svg>
+              </span>
+            </span>
+            <span class="header__setting header__dialog">
+              <span>
+                <svg width="31" height="30" viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#dialog" />
+                </svg>
+              </span>
+            </span>
+          </div>
+        </div>
+        <button class="header__search"></button>
+      </header>
+
+      <div class="container analytics-page">
+        <ul class="menu menu--bottom">
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              адаптация
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link--active">
+              аналитика
+            </a>
+          </li>
+        </ul>
+
+        <div class="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Абдрашитов Альберт Мазитович</a>
+            </li>
+            <li>
+              <a href="#">Адаптация</a>
+            </li>
+            <li>
+              <a href="#" class="current">Аналитика</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="analytics-page__header">
+          <h2>Аналитика</h2>
+          <div class="input-wrap">
+            <input type="text" name="search" placeholder="Поиск по сотруднику">
+          </div>
+          <div>
+            <button class="btn btn--secondary">
+              <span class="btn__icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#plus-icon" />
+                </svg>
+              </span>
+              <span class="btn__text">
+                добавить задачу
+              </span>
+            </button>
+            <button class="btn btn--secondary">
+              <span class="btn__icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#plus-icon" />
+                </svg>
+              </span>
+              <span class="btn__text">
+                назначить наставника
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

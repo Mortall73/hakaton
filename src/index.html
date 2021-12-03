@@ -16,6 +16,10 @@
       <svg id="dialog" width="31" height="30" viewBox="0 0 31 30"  xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9926 0C19.0013 -6.60433e-06 22.7637 1.56024 25.6007 4.39533C28.4378 7.23042 30.0068 10.9915 30.0093 15C30.0117 19.0084 28.4537 22.7695 25.6201 25.6046C22.7294 28.4968 18.8865 30 15.0046 30C12.5879 30 10.1518 29.4165 7.92469 28.2178C5.92752 29.6575 3.97407 29.9683 2.64838 29.9683C2.15363 29.9683 1.74765 29.9239 1.46219 29.8795C0.853202 29.7844 0.383528 29.3087 0.288011 28.6998C0.192493 28.0909 0.50294 27.5011 1.05461 27.2283C2.20235 26.6639 2.97551 25.5349 3.45698 24.5645C-1.46246 18.647 -1.08725 9.87529 4.38975 4.39537C7.22334 1.56027 10.9838 6.60441e-06 14.9926 0ZM16.0503 15.0054C16.0507 15.5868 15.5795 16.0582 14.9979 16.0582C14.4162 16.0582 13.9445 15.5868 13.9441 15.0054C13.9437 14.4239 14.4149 13.9526 14.9966 13.9526C15.5782 13.9526 16.05 14.4239 16.0503 15.0054ZM20.4275 16.0565C21.0091 16.0565 21.4802 15.5851 21.4799 15.0037C21.4795 14.4222 21.0078 13.9508 20.4262 13.9508C19.8446 13.9508 19.3734 14.4222 19.3738 15.0037C19.3741 15.5851 19.8459 16.0565 20.4275 16.0565ZM10.6206 15.0071C10.621 15.5885 10.1498 16.0599 9.56816 16.0599C8.98655 16.0599 8.51477 15.5885 8.51441 15.0071C8.51406 14.4257 8.98526 13.9543 9.56688 13.9543C10.1485 13.9543 10.6203 14.4256 10.6206 15.0071Z" />
       </svg>
+      <svg id="plus-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 7.99999C2 7.44771 2.44772 6.99999 3 6.99999H13C13.5523 6.99999 14 7.44771 14 7.99999C14 8.55228 13.5523 8.99999 13 8.99999H3C2.44772 8.99999 2 8.55228 2 7.99999Z" />
+        <path d="M7.99988 14C7.44759 14 6.99988 13.5523 6.99988 13V3C6.99988 2.44772 7.44759 2 7.99988 2C8.55216 2 8.99988 2.44772 8.99988 3V13C8.99988 13.5523 8.55216 14 7.99988 14Z" />
+      </svg>
     </symbol>
   </div>
   <div class="overflow-container">
@@ -92,36 +96,692 @@
 
         <div class="panel">
           <div class="user-card">
-            <div class="user-card__img">
-              <img src="/public/img/user.png" alt="">
-              <span class="user-card__status"></span>
+            <div class="user-card__inner">
+              <div class="user-card__left">
+                <div class="user-card__img">
+                  <img src="/public/img/user.png" alt="">
+                  <span class="user-card__status"></span>
+                </div>
+                <div class="user-card__body">
+                  <p class="user-card__title">
+                    Абдрашитов Альберт Мазитович
+                  </p>
+                  <p class="user-card__position">
+                    Главный специалист по работе с ключевыми клиентами
+                  </p>
+                  <a href="#" class="user-card__segment">
+                    Группа внутренних коммуникаций и развития корпоративной культуры / Департамент управления персоналом / Подразделения под  Барыбина О.Г.
+                  </a>
+                </div>
+              </div>
+  
+              <div class="user-card__about">
+                <p class="user-card__work-number">
+                  <span>(71) 3729</span>
+                  <span>(3812) 43-8484</span>
+                </p>
+                <p class="user-card__phone">
+                  +7 (903) 676-8494
+                </p>
+                <p class="user-card__mail">
+                  abdrashitovam@orenburg.psbank.ru
+                </p>
+                <p class="user-card__location">
+                  Москва, Дербеневская Набережная, д. 7, стр./корпус 22, подъезд А, 2 этаж, Open Space 1240, место 127
+                </p>
+              </div>
             </div>
-            <div class="user-card__body">
-              <p class="user-card__title">
-                Абдрашитов Альберт Мазитович
-              </p>
-              <p class="user-card__position">
-                Главный специалист по работе с ключевыми клиентами
-              </p>
-              <a href="#" class="user-card__segment">
-                Группа внутренних коммуникаций и развития корпоративной культуры / Департамент управления персоналом / Подразделения под  Барыбина О.Г.
-              </a>
+            
+            <ul class="menu menu--top">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--active">
+                  рабочий стол
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Профиль
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  адаптация
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Задачи
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  льготы
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  отсутствия
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  полезные ссылки
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel__header panel__header--setting">
+            <p class="panel__title">
+              Адаптация
+            </p>
+            <div class="panel__settings">
+              <button class="settings-button"></button>
             </div>
-            <div class="user-card__about">
-              <p class="user-card__work-number">
-                <span>(71) 3729</span>
-                <span>(3812) 43-8484</span>
-              </p>
-              <p class="user-card__phone">
-                +7 (903) 676-8494
-              </p>
-              <p class="user-card__mail">
-                abdrashitovam@orenburg.psbank.ru
-              </p>
-              <p class="user-card__loccation">
-                Москва, Дербеневская Набережная, д. 7, стр./корпус 22, подъезд А, 2 этаж, Open Space 1240, место 127
-              </p>
+          </div>
+          <div class="tabs">
+            <ul uk-tab>
+              <li>
+                <a href="#">8 новые</a>
+              </li>
+              <li>
+                <a href="#">2 выполнены</a>
+              </li>
+            </ul>
+            <ul class="uk-switcher" >
+              <li>
+                <div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting"></span>
+                        </td>
+                        <td>
+                          <span class="table__sort">
+                            Наименование
+                          </span>
+                        </td>
+                        <td>
+                          <span class="table__sort table__sort--reverse">
+                            Дата исполнения
+                          </span>
+                        </td>
+                        <td>
+                          <span class="table__sort table__sort--reverse">
+                            Постановщик
+                          </span>
+                        </td>
+                        <td>
+                          <span class="table__sort table__sort--reverse">
+                            Статус
+                          </span>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting-button"></span>
+                        </td>
+                        <td>
+                          <span>Завести заявку на подготовку рабочего места</span>
+                        </td>
+                        <td>
+                          <span>16 июля 18:00</span>
+                        </td>
+                        <td>
+                          <span class="table__user">
+                            <span class="table__user-img">
+                              <img src="/public/img/user.png" alt="">
+                            </span>
+                            <span>Белоусова Н. М.</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="badge badge--new">
+                            Новое
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting-button"></span>
+                        </td>
+                        <td>
+                          <span>Завести заявку на подготовку рабочего места</span>
+                        </td>
+                        <td>
+                          <span>16 июля 18:00</span>
+                        </td>
+                        <td>
+                          <span class="table__user">
+                            <span class="table__user-img">
+                              <img src="/public/img/user.png" alt="">
+                            </span>
+                            <span>Белоусова Н. М.</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="badge badge--inwork">
+                            В работе
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting-button"></span>
+                        </td>
+                        <td>
+                          <span>Завести заявку на подготовку рабочего места</span>
+                        </td>
+                        <td>
+                          <span>16 июля 18:00</span>
+                        </td>
+                        <td>
+                          <span class="table__user">
+                            <span class="table__user-img">
+                              <img src="/public/img/user.png" alt="">
+                            </span>
+                            <span>Белоусова Н. М.</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="badge badge--ready">
+                            Завершено
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel__header panel__header--setting">
+            <p class="panel__title">
+              Задачи
+            </p>
+            <div class="panel__settings">
+              <button class="btn btn--secondary">
+                <span class="btn__icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#plus-icon" />
+                  </svg>
+                </span>
+                <span class="btn__text">
+                  добавить задачу
+                </span>
+              </button>
+              <button class="settings-button"></button>
             </div>
+          </div>
+          <div class="tabs">
+            <ul uk-tab>
+              <li>
+                <a href="#">8 новые</a>
+              </li>
+              <li>
+                <a href="#">1 выполнена</a>
+              </li>
+            </ul>
+            <ul class="uk-switcher" >
+              <li>
+                <div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting"></span>
+                        </td>
+                        <td>
+                          <span>
+                            Название
+                          </span>
+                        </td>
+                        <td>
+                          <span>
+                            Крайний срок
+                          </span>
+                        </td>
+                        <td>
+                          <span>
+                            Постановщик
+                          </span>
+                        </td>
+                        <td>
+                          <span>
+                            Статус
+                          </span>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting-button"></span>
+                        </td>
+                        <td>
+                          <span class="color-red">Запись о приеме на работу Евгении Шамрай</span>
+                        </td>
+                        <td>
+                          <span>16 июля 18:00</span>
+                        </td>
+                        <td>
+                          <span class="table__user">
+                            <span class="table__user-img">
+                              <img src="/public/img/user.png" alt="">
+                            </span>
+                            <span>Белоусова Н. М.</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="badge badge--new">
+                            Новое
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting-button"></span>
+                        </td>
+                        <td>
+                          <span>Завести заявку на подготовку рабочего места</span>
+                        </td>
+                        <td>
+                          <span>16 июля 18:00</span>
+                        </td>
+                        <td>
+                          <span class="table__user">
+                            <span class="table__user-img">
+                              <img src="/public/img/user.png" alt="">
+                            </span>
+                            <span>Белоусова Н. М.</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="badge badge--inwork">
+                            В работе
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting-button"></span>
+                        </td>
+                        <td>
+                          <span>Завести заявку на подготовку рабочего места</span>
+                        </td>
+                        <td>
+                          <span>16 июля 18:00</span>
+                        </td>
+                        <td>
+                          <span class="table__user">
+                            <span class="table__user-img">
+                              <img src="/public/img/user.png" alt="">
+                            </span>
+                            <span>Белоусова Н. М.</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="badge badge--ready">
+                            Завершено
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <td>
+                        <label class="checkbox">
+                          <input type="checkbox" name="1" >
+                          <span class="checkbox__icon"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <span class="table__setting"></span>
+                      </td>
+                      <td>
+                        <span>
+                          Название
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          Крайний срок
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          Постановщик
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          Статус
+                        </span>
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label class="checkbox">
+                          <input type="checkbox" name="1" >
+                          <span class="checkbox__icon"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <span class="table__setting-button"></span>
+                      </td>
+                      <td>
+                        <span>Запись о приеме на работу Евгении Шамрай</span>
+                      </td>
+                      <td>
+                        <span>16 июля 18:00</span>
+                      </td>
+                      <td>
+                        <span class="table__user">
+                          <span class="table__user-img">
+                            <img src="/public/img/user.png" alt="">
+                          </span>
+                          <span>Белоусова Н. М.</span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="badge badge--new">
+                          Новое
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel__header panel__header--setting">
+            <p class="panel__title">
+              Услуги
+            </p>
+            <div class="panel__settings">
+              <button class="settings-button"></button>
+            </div>
+          </div>
+          <div class="tabs">
+            <ul uk-tab>
+              <li>
+                <a href="#">8 новые</a>
+              </li>
+              <li>
+                <a href="#">1 выполнена</a>
+              </li>
+            </ul>
+            <ul class="uk-switcher" >
+              <li>
+                <div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting"></span>
+                        </td>
+                        <td>
+                          <span>
+                            Название
+                          </span>
+                        </td>
+                        <td>
+                          <span>
+                            Крайний срок
+                          </span>
+                        </td>
+                        <td>
+                          <span>
+                            Постановщик
+                          </span>
+                        </td>
+                        <td>
+                          <span>
+                            Статус
+                          </span>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting-button"></span>
+                        </td>
+                        <td>
+                          <span>Подключение интернета на корпоративном сотовом номере</span>
+                        </td>
+                        <td>
+                          <span>16 июля 18:00</span>
+                        </td>
+                        <td>
+                          <span class="table__user">
+                            <span class="table__user-img">
+                              <img src="/public/img/user.png" alt="">
+                            </span>
+                            <span>Белоусова Н. М.</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="badge badge--new">
+                            Новое
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting-button"></span>
+                        </td>
+                        <td>
+                          <span>Предоставление мобильных средств связи (ФИЛИАЛЫ)</span>
+                        </td>
+                        <td>
+                          <span>—</span>
+                        </td>
+                        <td>
+                          <span class="table__user">
+                            <span class="table__user-img">
+                              <img src="/public/img/user.png" alt="">
+                            </span>
+                            <span>Белоусова Н. М.</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="badge badge--inwork">
+                            В работе
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="checkbox">
+                            <input type="checkbox" name="1" >
+                            <span class="checkbox__icon"></span>
+                          </label>
+                        </td>
+                        <td>
+                          <span class="table__setting-button"></span>
+                        </td>
+                        <td>
+                          <span>Переезд сотрудников на новое рабочее место (внутренний ПСБ)</span>
+                        </td>
+                        <td>
+                          <span>—</span>
+                        </td>
+                        <td>
+                          <span class="table__user">
+                            <span class="table__user-img">
+                              <img src="/public/img/user.png" alt="">
+                            </span>
+                            <span>Белоусова Н. М.</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="badge badge--ready">
+                            Завершено
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <td>
+                        <label class="checkbox">
+                          <input type="checkbox" name="1" >
+                          <span class="checkbox__icon"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <span class="table__setting"></span>
+                      </td>
+                      <td>
+                        <span>
+                          Название
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          Крайний срок
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          Постановщик
+                        </span>
+                      </td>
+                      <td>
+                        <span>
+                          Статус
+                        </span>
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label class="checkbox">
+                          <input type="checkbox" name="1" >
+                          <span class="checkbox__icon"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <span class="table__setting-button"></span>
+                      </td>
+                      <td>
+                        <span>Запись о приеме на работу Евгении Шамрай</span>
+                      </td>
+                      <td>
+                        <span>16 июля 18:00</span>
+                      </td>
+                      <td>
+                        <span class="table__user">
+                          <span class="table__user-img">
+                            <img src="/public/img/user.png" alt="">
+                          </span>
+                          <span>Белоусова Н. М.</span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="badge badge--new">
+                          Новое
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

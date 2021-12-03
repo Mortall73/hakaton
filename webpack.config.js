@@ -150,12 +150,12 @@ module.exports = (env, args) => {
         inject: true,
         cache: false,
       }),
-      // new HtmlWebpackPlugin({
-      //   filename: 'calendar.html',
-      //   template: 'src/pages/calendar.html',
-      //   inject: true,
-      //   cache: false,
-      // }),
+      new HtmlWebpackPlugin({
+        filename: 'analytics.html',
+        template: 'src/pages/analytics.html',
+        inject: true,
+        cache: false,
+      }),
       // new HtmlWebpackPlugin({
       //   filename: 'team.html',
       //   template: 'src/pages/team.html',

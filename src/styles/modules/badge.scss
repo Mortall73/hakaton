@@ -1,0 +1,55 @@
+.badge {
+  font-size: 14px;
+  padding: 4px 8px 4px 20px;
+  border-radius: 4px;
+  background-color: #ccc;
+  position: relative;
+
+  &.badge--new {
+    background: #FFFADC;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #E19600;
+      left: 8px;
+      top: 50%;
+      margin-top: -3px;
+      border-radius: 50%;
+    }
+  }
+
+  &.badge--inwork {
+    background: #E6F5FA;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #0087B4;
+      left: 8px;
+      top: 50%;
+      margin-top: -3px;
+      border-radius: 50%;
+    }
+  }
+
+  &.badge--ready {
+    background: #E1FFE6;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #00B45A;
+      left: 8px;
+      top: 50%;
+      margin-top: -3px;
+      border-radius: 50%;
+    }
+  }
+}

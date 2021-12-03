@@ -2,4 +2,54 @@
   background: #FFFFFF;
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+
+  &.panel--padding {
+    padding: 24px;
+  }
+
+  .panel__settings {
+    display: flex;
+    align-items: center;
+
+    > * {
+      margin-right: 18px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .panel__header {
+    margin-bottom: 24px;
+    padding: 30px;
+    
+
+    &.panel__header--setting {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .panel__title {
+      margin-bottom: 0;
+    }
+  }
+
+  .panel__title {
+    font-family: 'PTSerif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+    margin-top: 0;
+  }
+
+  .tabs {
+    .uk-tab {
+      padding: 0 30px;
+    }
+  }
 }

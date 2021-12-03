@@ -1,0 +1,123 @@
+.table {
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 100%;
+
+  .table__setting {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('/public/img/setting.svg') center center no-repeat;
+  }
+
+  thead {
+    font-size: 14px;
+    color: $gray;
+
+    tr {
+      border-top: none;
+    }
+
+    td {
+      text-align: left;
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: #DAE3EE;
+        cursor: pointer;
+      }
+    }
+  }
+
+  tr {
+    border-top: 1px solid #E3E5E8;
+
+    td {
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  td {
+    padding: 24px 8px;
+    > * {
+      vertical-align: middle;
+    }
+  }
+
+  .table__setting-button {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url('/public/img/kebab.svg') center center no-repeat;
+  }
+
+  .table__sort {
+    position: relative;
+    padding-right: 16px;
+
+    &:hover {
+      color: $colorBlack;
+      cursor: pointer;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -2px;
+      width: 8px;
+      height: 8px;
+      background: url('/public/img/arrow.svg') center center no-repeat;
+      transform: rotate(90deg);
+    }
+
+    &.table__sort--reverse {
+      &::after {
+        margin-top: 1px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -6px;
+        width: 8px;
+        height: 8px;
+        background: url('/public/img/arrow.svg') center center no-repeat;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  .table__user {
+    display: inline-block;
+
+    .table__user-img {
+      width: 24px;
+      height: 24px;
+      position: relative;
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      min-height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

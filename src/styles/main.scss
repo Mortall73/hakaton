@@ -1,6 +1,6 @@
-@import "uikit/src/scss/variables-theme.scss";
-@import "uikit/src/scss/mixins-theme.scss";
-@import "uikit/src/scss/uikit-theme.scss";
+// @import "uikit/src/scss/variables-theme.scss";
+// @import "uikit/src/scss/mixins-theme.scss";
+// @import "uikit/src/scss/uikit-theme.scss";
 
 @import "./fonts.scss";
 @import "./variables.scss";
@@ -12,6 +12,7 @@ body {
   color: $colorBlack;
   background-color: #F5F6F7;
   background: linear-gradient(0deg, #F2F2F2, #F2F2F2), #F5F6F7;
+  margin: 0;
 
   &.stop-scrolling {
     overflow-y: hidden;
@@ -66,8 +67,27 @@ main {
   margin-bottom: 24px;
 }
 
+.color-red {
+  color: #FF1A1A;
+}
+
+h2, .h2 {
+  font-weight: bold;
+  font-size: 38px;
+  margin: 0;
+  font-family: 'PTSerif';
+}
+
+@import "./pages/analytics.scss";
+
 @import "./modules/header.scss";
 @import "./modules/breadcrumbs.scss";
 @import "./modules/panel.scss";
 @import "./modules/menu.scss";
 @import "./modules/userCard.scss";
+@import "./modules/checkbox.scss";
+@import "./modules/table.scss";
+@import "./modules/tabs.scss";
+@import './modules/badge.scss';
+@import "./modules/buttons.scss";
+@import "./modules/input.scss";

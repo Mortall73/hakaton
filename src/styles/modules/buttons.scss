@@ -1,0 +1,66 @@
+.settings-button {
+  width: 12px;
+  height: 18px;
+  border: none;
+  outline: none;
+  background: url('/public/img/kebab.svg') -9px center no-repeat;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    width: 12px;
+    height: 18px;
+    background: url('/public/img/kebab.svg') center center no-repeat;
+    display: block;
+    position: relative;
+    left: 4px;
+  }
+}
+
+.btn {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 14px 20px;
+
+  .btn__icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .btn__text {
+    vertical-align: middle;
+  }
+
+  &.btn--secondary {
+    border: 1px solid #009FDA;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #009FDA;
+    font-weight: 700;
+
+    &:hover,
+    &:active {
+      color: #12B2ED;
+      border-color: #12B2ED;
+      cursor: pointer;
+
+      svg {
+        fill: #12B2ED;
+      }
+    }
+
+    svg  {
+      fill: #009FDA;
+    }
+  }
+}
