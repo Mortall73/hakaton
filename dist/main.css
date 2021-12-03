@@ -1212,6 +1212,14 @@ a.btn {
     text-transform: uppercase;
     padding: 14px 20px;
     color: #fff; }
+    .btn.btn--primary.btn--outline {
+      border: 1px solid #FA4616;
+      background: transparent;
+      color: #FA4616; }
+      .btn.btn--primary.btn--outline:hover {
+        border-color: #FA4616;
+        color: #F03200;
+        background: transparent; }
     .btn.btn--primary:hover {
       background: #F03200; }
 
@@ -1414,6 +1422,11 @@ a.btn {
     font-size: 20px;
     line-height: 29px;
     margin: 0 0 16px 0; }
+  .question .question__block-btns {
+    font-size: 0; }
+    .question .question__block-btns .btn {
+      display: inline-block;
+      margin-right: 10px; }
 
 
 /*# sourceMappingURL=main.css.map*/

@@ -87,6 +87,18 @@ a.btn {
     padding: 14px 20px;
     color: #fff;
 
+    &.btn--outline {
+      border: 1px solid #FA4616;
+      background: transparent;
+      color: #FA4616;
+
+      &:hover {
+        border-color: #FA4616;
+        color: #F03200;
+        background: transparent;
+      }
+    }
+
     &:hover {
       background: #F03200;
     }
