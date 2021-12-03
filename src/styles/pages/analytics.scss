@@ -3,5 +3,27 @@
     display: flex;
     align-items: center;
     margin-bottom: 24px;
+
+    h2 {
+      margin-right: 40px;
+    }
+
+    .input-wrap {
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
+    }
+
+    .analytics-page__header-buttons {
+      flex-shrink: 0;
+
+      .btn {
+        margin-left: 16px;
+
+
+      }
+    }
   }
 }

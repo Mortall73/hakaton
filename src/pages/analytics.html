@@ -20,6 +20,9 @@
         <path d="M2 7.99999C2 7.44771 2.44772 6.99999 3 6.99999H13C13.5523 6.99999 14 7.44771 14 7.99999C14 8.55228 13.5523 8.99999 13 8.99999H3C2.44772 8.99999 2 8.55228 2 7.99999Z" />
         <path d="M7.99988 14C7.44759 14 6.99988 13.5523 6.99988 13V3C6.99988 2.44772 7.44759 2 7.99988 2C8.55216 2 8.99988 2.44772 8.99988 3V13C8.99988 13.5523 8.55216 14 7.99988 14Z" />
       </svg>
+      <svg id="search" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 10.755C3 6.48 6.476 3 10.755 3c4.274 0 7.754 3.476 7.754 7.755a7.72 7.72 0 0 1-1.59 4.701l3.78 3.78a1.038 1.038 0 0 1-.732 1.768 1.04 1.04 0 0 1-.731-.306l-3.78-3.78a7.72 7.72 0 0 1-4.701 1.591C6.479 18.509 3 15.029 3 10.754Zm7.75-5.682a5.688 5.688 0 0 0-5.68 5.681 5.691 5.691 0 0 0 5.68 5.685 5.692 5.692 0 0 0 5.682-5.684 5.688 5.688 0 0 0-5.681-5.682Z" />
+      </svg>       
     </symbol>
   </div>
   <div class="overflow-container">
@@ -112,10 +115,16 @@
 
         <div class="analytics-page__header">
           <h2>Аналитика</h2>
-          <div class="input-wrap">
+
+          <div class="input-wrap input--search">
             <input type="text" name="search" placeholder="Поиск по сотруднику">
+            <span class="input-wrap__search-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#search" />
+              </svg>
+            </span>
           </div>
-          <div>
+          <div class="analytics-page__header-buttons">
             <button class="btn btn--secondary">
               <span class="btn__icon">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,6 +147,68 @@
             </button>
           </div>
         </div>
+
+        <div class="panel">
+          <table class="table">
+            <thead>
+              <tr>
+                <td>
+                  <span class="table__sort">
+                    Обучаемый
+                  </span>
+                </td>
+                <td>
+                  <span class="table__sort table__sort--reverse">
+                    Период
+                  </span>
+                </td>
+                <td>
+                  <span class="table__sort table__sort--reverse">
+                    Прогресс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__sort">
+                    Наставник
+                  </span>
+                </td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="no-hover">
+                <td>
+                  <span class="table__user">
+                    <span class="table__user-img">
+                      <img src="/public/img/user.png" alt="">
+                    </span>
+                    <span>Варламова Елена Сергеевна</span>
+                  </span>
+                </td>
+                <td>
+                  <span>1 м 18 д</span>
+                </td>
+                <td>
+                  78%
+                </td>
+                <td>
+                  <span class="table__user">
+                    <span class="table__user-img">
+                      <img src="/public/img/user.png" alt="">
+                    </span>
+                    <span>Пантелеймонов Пантелейемон Иванович</span>
+                  </span>
+                </td>
+                <td>
+                  <button class="btn btn--link">
+                    Сменить
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
     </main>
   </div>

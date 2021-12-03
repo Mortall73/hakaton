@@ -279,7 +279,8 @@ h2, .h2 {
   font-weight: bold;
   font-size: 38px;
   margin: 0;
-  font-family: 'PTSerif'; }
+  font-family: 'PTSerif';
+  line-height: 1; }
 
 .analytics-page .analytics-page__header {
   display: -webkit-box;
@@ -289,6 +290,17 @@ h2, .h2 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 24px; }
+  .analytics-page .analytics-page__header h2 {
+    margin-right: 40px; }
+  .analytics-page .analytics-page__header .input-wrap {
+    width: 100%; }
+    .analytics-page .analytics-page__header .input-wrap input {
+      width: 100%; }
+  .analytics-page .analytics-page__header .analytics-page__header-buttons {
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
+    .analytics-page .analytics-page__header .analytics-page__header-buttons .btn {
+      margin-left: 16px; }
 
 .header {
   background: #FFFFFF;
@@ -653,7 +665,7 @@ h2, .h2 {
       border-top: none; }
     .table thead td {
       text-align: left; }
-  .table tbody tr:hover {
+  .table tbody tr:not(.no-hover):hover {
     background-color: #DAE3EE;
     cursor: pointer; }
   .table tr {
@@ -816,7 +828,8 @@ h2, .h2 {
   border: none;
   outline: none;
   border-radius: 40px;
-  padding: 14px 20px; }
+  padding: 14px 20px;
+  cursor: pointer; }
   .btn .btn__icon {
     display: inline-block;
     width: 16px;
@@ -841,6 +854,10 @@ h2, .h2 {
         fill: #12B2ED; }
     .btn.btn--secondary svg {
       fill: #009FDA; }
+  .btn.btn--link {
+    font-size: 14px;
+    line-height: 18px;
+    color: #009FDA; }
 
 .input-wrap input {
   background: #FFFFFF;
@@ -849,7 +866,10 @@ h2, .h2 {
   padding: 8px 16px;
   font-size: 16px;
   border: none;
-  outline: none; }
+  outline: none;
+  line-height: 23px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .input-wrap input::-webkit-input-placeholder {
     color: #B9BFC5; }
   .input-wrap input::-moz-placeholder {
@@ -860,6 +880,19 @@ h2, .h2 {
     color: #B9BFC5; }
   .input-wrap input::placeholder {
     color: #B9BFC5; }
+
+.input-wrap.input--search {
+  position: relative; }
+  .input-wrap.input--search .input-wrap__search-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    pointer-events: none; }
+    .input-wrap.input--search .input-wrap__search-icon svg * {
+      fill: #B9BFC5; }
 
 
 /*# sourceMappingURL=main.css.map*/

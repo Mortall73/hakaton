@@ -7,9 +7,29 @@
     font-size: 16px;
     border: none;
     outline: none;
+    line-height: 23px;
+    box-sizing: border-box;
 
     &::placeholder {
       color: #B9BFC5;
+    }
+  }
+
+  &.input--search {
+    position: relative;
+
+    .input-wrap__search-icon {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      width: 24px;
+      height: 24px;
+      margin-top: -12px;
+      pointer-events: none;
+
+      svg * {
+        fill: #B9BFC5;
+      }
     }
   }
 }

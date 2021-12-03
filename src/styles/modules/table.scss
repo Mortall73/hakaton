@@ -24,7 +24,7 @@
   }
 
   tbody {
-    tr {
+    tr:not(.no-hover) {
       &:hover {
         background-color: #DAE3EE;
         cursor: pointer;
